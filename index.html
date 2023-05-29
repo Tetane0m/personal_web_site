@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styel.css">
+    <title>my web site !!</title>
+</head>
+<body>
+    <nav class="nav">
+        <a href="#home" class="logo"><i class="fa-solid fa-house"></i></a>
+        <input type="checkbox" id="tog">
+        <label for="tog" id="optog"><i class="fa-solid fa-bars"></i></label>
+        <div class="menu">
+            <ul class="list">
+                <li><a href="#home">home</a></li>
+                <li><a href="#skils">skils</a></li>
+                <li><a href="#con">contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="home" id="home">
+        <div class="detals">
+            <h2>hi  my name is <span>haider</span></h2>
+            <h2>im <span>front-end</span> devloper</h2><br><br>
+            <h3>i'm from university of </h3>
+            <h3>information and tecnology</h3>
+            <h3><a href="http://uoitc.edu.iq">>> uoitc <<</a></h3>
+        </div>
+        <div class="img">
+            <div class="lock">
+                <img src="undraw_landscape_photographer_blv1.svg" alt="my photo">
+                <a href="#"><i class="fa-solid fa-download"></i></a>
+                <a href="#"><i class="fa-solid fa-phone"></i></a>
+                <a href="#"><i class="fa-solid fa-paper-plane"></i></a>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="skil" id="skils">
+        <h1>hi this is same of <br>
+            my skills : 
+        </h1>
+        <ul>
+            <li><a href="https://www.koenig-solutions.com">html .</a></li>
+            <li><a href="https://www.python.org">python .</a></li>
+            <li><a href="https://www.mysql.com">mysql .</a></li>
+            <li><a href="https://www.java.com">java .</a></li>
+            <li><a href="https://www.cisco.com">cisco .</a></li>
+        </ul>
+        <h3>Welcome, you can find topics related to my skills 
+             just by clicking on the name of the skill .</h3>
+        
+    </div>
+    <div class="log_img">
+        <img src="undraw_sign_up_n6im.svg" class="log_img_img">
+    </div>
+    <div class="con" id="con">
+        <h1> here you can contact me !</h1>
+        <form method="post">
+            <div class="item_input">
+                <label for="em">Email :</label>
+                <input type="email" name="eml" required id="em" 
+                placeholder="example@domin.com">
+            </div>
+            <div class="item_input">
+                <label for="num">Number :</label>
+                <input type="number" name="num" required id="num"
+                placeholder="07xx-xxx-xxxx">
+            </div>
+            <div class="item_input">
+                <label for="ms">Messge :</label>
+                <input id="ms" type="text" name="mes" 
+                required placeholder="your messge ">
+            </div>
+            <a type="submit" class="btn" id="btn">submit</a>
+        </form>
+    </div>
+
+    <script>
+        let bt = document.getElementById("btn");
+        bt.addEventListener("click", function(){
+        alert("hi my name is haider !! \ri have save your information .");
+        });
+
+        
+    </script>
+</body>
+</html>
